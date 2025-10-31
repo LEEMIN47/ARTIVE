@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>ARTIVE</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" type="image/png" sizes="32x100" href="./images/symbol.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="main">
+
+        <div class="header">
+            <h1 class="logo">
+                <a href="./artive.html">
+                    <img src="./images/logo(w).png" alt="logo">
+                </a>
+            </h1>
+            <ul class="gnb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Exhibition</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- header_e -->
+        <div class="main_wrap">
+            <div class="main_t">
+                <h2>기록을 디자인하다, ARTIVE</h2>
+                <h3>ARTIST ARCHIVE PLATFORM</h3>
+
+
+                <ul class="link">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Archive</a></li>
+                </ul>
+
+            </div>
+            <!-- main_t_e -->
+
+        </div>
+        <!-- main_wrap_e -->
+
+    </div>
+    <!-- main_e -->
+
+    <div id="contents">
+        <div class="logo_b">
+
+        </div>
+
+
+
+        <div class="typing-txt">
+
+            <ul>
+                <li>작가의 기억과 과정을 기록으로 남기다</li>
+                <li>이미지와 언어가 만나 새로운 아카이브가 된다</li>
+
+            </ul>
+        </div>
+        <div class="typing">
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+
+
+
+        <p class="content_p">ARTIVE는 <span>예술을 기록하는 플랫폼입니다.</span>
+            <br>작품의 맥락을 구조화하고, 미래를 위해 보존합니다.
+        </p>
+
+        <p class="text_box">
+            우리는 작품, 작가, 전시의 데이터를 체계화합니다.
+            <br>기록을 검색, 탐색 가능한 언어로 바꿉니다.
+            <br>축적된 아카이브가 새로운 창작의 출발점이 됩니다.
+        </p>
+
+
+        <div class="artists">
+            <ul class="artist_p">
+                <!-- 김하린 -->
+                <li><img src="./images/김하린 프로필.jpg" alt="김하린">
+                    <div class="artist_t">
+                        <p class="artist">김하린</p>
+                        <p class="field">회화</p>
+                        <div class="button" onclick="loadArchive('김하린', 'archiveContainer_김하린')">View Archive</div>
+                    </div>
+
+                    <div id="archiveContainer_김하린" class="archive-container"></div>
+
+                    <div id="archiveContainer_이도현" class="archive-container"></div>
+
+                    <div id="archiveContainer_아야카모리" class="archive-container"></div>
+
+                    <div id="archiveContainer_장우석" class="archive-container"></div>
+
+                </li>
+
+                <!-- 이도현 -->
+                <li><img src="./images/이도현 프로필.jpg" alt="이도현">
+                    <div class="artist_t">
+                        <p class="artist">이도현</p>
+                        <p class="field">미디어아트</p>
+                        <div class="button" onclick="loadArchive('이도현', 'archiveContainer_이도현')">View Archive</div>
+                    </div>
+
+                </li>
+
+
+
+                <!-- 아야카모리 -->
+                <li><img src="./images/장우석 프로필.jpg" alt="아야카모리">
+                    <div class="artist_t">
+                        <p class="artist">아야카모리</p>
+                        <p class="field">텍스타일</p>
+                        <div class="button" onclick="loadArchive('아야카모리', 'archiveContainer_아야카모리')">View Archive</div>
+                    </div>
+                </li>
+
+                <!-- 장우석 -->
+                <li><img src="./images/장우석 프로필.jpg" alt="장우석">
+                    <div class="artist_t">
+                        <p class="artist">장우석</p>
+                        <p class="field">조각/설치</p>
+                        <div class="button" onclick="loadArchive('장우석', 'archiveContainer_장우석')">View Archive</div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <!-- artists_e -->
+    </div>
+    <!-- contents_e -->
+
+
+    <div id="footer_wrap">
+        <div class="footer">
+            <div class="footer_top">
+                <p class="footer_name">ARTIVE artist platform</p>
+                <ul class="footer_link">
+                    <li><a href="#">Location</a>
+                        <p class="footer_p1">서울시 마포구 월드컵북로 63
+                            <br>(성산로,서래빌딩 3층)
+                        </p>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <p class="footer_p">TEL 02.345.6789
+                            <br>FAX 02.345.6789
+                        </p>
+                    </li>
+                    <li><a href="#">Site Map</a>
+                        <p class="footer_p">Home
+                            <br>About
+                            <br>Exhibition
+                            <br>Artists
+                            <br>Archive
+                            <br>Contact
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- footer_top_e -->
+
+            <div class="footer_bottom">
+                <div class="footer_logo">
+                    <img src="./images/logo(w).png" alt="logo(w)">
+                </div>
+                <ul class="icon">
+                    <li><a href="#"><img src="./images/sns icon-02.png" alt="icon-02"></a></li>
+                    <li><a href="#"><img src="./images/sns icon-03.png" alt="icon-03"></a></li>
+                    <li><a href="#"><img src="./images/sns icon-04.png" alt="icon-04"></a></li>
+                    <li><a href="#"><img src="./images/sns icon-05.png" alt="icon-05"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer_e -->
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
