@@ -247,8 +247,8 @@ body {
 
 .back-archive-btn {
     position: absolute;
-    right: 150px;
-    display: block;
+    right: 850px;
+        display: block;
     margin: 40px auto;
     padding: 12px 24px;
     border: 1px solid #000;

@@ -102,8 +102,8 @@ h3 {
 
 #contents {
     position: relative;
-    height: 2800px;
-   
+    height: 1500px;
+
 }
 
 /* .logo_t {
@@ -119,7 +119,7 @@ h3 {
     font-weight: 600;
     right: 0;
 } */
- 
+
 /* .typing-txt{
     text-align: center;
     margin-top: 150px;
@@ -127,30 +127,45 @@ h3 {
     
 } */
 
-.typing-txt{display: none;
-    
+.typing-txt {
+    display: none;
 
+
+}
+
+ul {
+    list-style: none;
+}
+
+.typing ul li.on {
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 1px solid #fff
     }
-		ul{list-style:none;}
-		.typing ul li.on {  
-		  display: inline-block; 
-		  animation-name: cursor; 
-		  animation-duration: 0.3s; 
-		  animation-iteration-count: infinite; 
-		} 
-		@keyframes cursor{ 
-		  0%{border-right: 1px solid #fff} 
-		  50%{border-right: 1px solid #000} 
-		  100%{border-right: 1px solid #fff} 
-		}
-        .typing{
-                text-align: center;
+
+    50% {
+        border-right: 1px solid #000
+    }
+
+    100% {
+        border-right: 1px solid #fff
+    }
+}
+
+.typing {
+    text-align: center;
     margin-top: 100px;
     font-size: 50px;
-        font-weight: 600;
-        line-height: 1.6;
-        height: 200px;
-        }
+    font-weight: 600;
+    line-height: 1.6;
+    height: 200px;
+}
 
 
 .logo_b {
@@ -183,7 +198,7 @@ span {
 
 
 
-.artists {
+#artists {
     width: 1320px;
     margin: 0 auto;
 
@@ -242,8 +257,8 @@ span {
     margin: 0 auto;
     font-weight: 600;
     color: #22F9FD;
-      display: inline-block;
-      cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -252,68 +267,75 @@ span {
 }
 
 .button.active {
-  background-color: #22F9FD;
-  color: rgb(0, 0, 0);
-  border-color: #22F9FD;
+    background-color: #22F9FD;
+    color: rgb(0, 0, 0);
+    border-color: #22F9FD;
 }
 
-    .archive-container {
-  display: none;
-   margin-top: 80px;
-   height: 270px;
+.archive-container {
+    display: none;
+    margin-top: 80px;
+    height: 270px;
 
 }
 
-#footer_wrap{
+#footer_wrap {
     border-top: 1px solid #b2b2b2;
-    margin-top:3000px ;
+    margin-top: 300px;
     height: 400px;
-     font-family:'PP Monument Extended', sans-serif ;
+    font-family: 'PP Monument Extended', sans-serif;
 }
-.footer{
+
+.footer {
     width: 1320px;
     margin: 0 auto;
     box-sizing: border-box;
 
 }
-.footer_top{
-  padding-top: 40px;
+
+.footer_top {
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
 }
-.footer_name{
-    font-family:'PP Monument Extended', sans-serif ;
+
+.footer_name {
+    font-family: 'PP Monument Extended', sans-serif;
     color: #b2b2b2;
     font-size: 17px;
 }
-.footer_link{
+
+.footer_link {
     display: flex;
- color: #b2b2b2;
+    color: #b2b2b2;
 }
-.footer_link li{
+
+.footer_link li {
     margin-left: 100px;
     font-size: 16px;
 }
 
 .footer_p {
- 
+
     font-size: 12px;
     margin-top: 20px;
-   line-height: 1.8;
+    line-height: 1.8;
 }
-.footer_p1{
-      line-height: 1.7;
-        font-size: 12px;
+
+.footer_p1 {
+    line-height: 1.7;
+    font-size: 12px;
     font-weight: 900;
     margin-top: 20px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
-.footer_bottom{
+
+.footer_bottom {
     display: flex;
     margin-top: 150px;
     justify-content: space-between;
 
-height: 180px;
+    height: 180px;
 }
 
 /* .footer_logo{
@@ -321,19 +343,72 @@ height: 180px;
         
 } */
 
-.icon{
+.icon {
     display: flex;
 
 
-  
+
 }
-.icon li{
+
+.icon li {
     margin-left: 30px;
-  
+
     margin-top: 50px;
 }
 
 
+#gallery_wrap{
+  margin-top: 4200px;  
+}
+.poster_t{
+margin-bottom: 150px;
+font-size: 20px;
+font-weight: 700;
+text-align: center;
+text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
 
+.carousel {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  perspective: 2000px;
 
+  left: 74%;
+  transform: translateX(-50%);
+ 
 
+}
+
+.carousel img {
+
+  position: absolute;
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: transform 2s ease, opacity 1.5s ease;
+  transform-origin: center center;
+}
+
+/* 기본 3장 위치 (가운데 / 왼쪽 / 오른쪽) */
+.carousel img:nth-child(1) {
+  transform: translateX(calc(-50% - 300px)) rotateY(30deg) scale(0.9);
+  opacity: 1;
+  z-index: 1;
+  border: 1px solid white;
+}
+.carousel img:nth-child(2) {
+  transform: translateX(-50%) rotateY(0deg) scale(1.2);
+  opacity: 1;
+  z-index: 1;
+}
+.carousel img:nth-child(3) {
+ transform: translateX(calc(-50% + 300px)) rotateY(-30deg) scale(0.9);
+  opacity: 1;
+  z-index: 1;
+}

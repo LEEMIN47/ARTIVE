@@ -132,3 +132,40 @@ function closeArchive() {
         artistsSection.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+
+
+
+// 
+const carousel = document.querySelector('.carousel');
+const images = carousel.querySelectorAll('img');
+let current = 1; // 현재 중앙 이미지 (index 1)
+
+function updatePositions() {
+  const left = (current + 2) % 3;
+  const center = current;
+  const right = (current + 1) % 3;
+
+  images[left].style.transform = 'translateX(calc(-50% - 300px)) rotateY(30deg) scale(0.9)';
+  images[left].style.opacity = '1';
+  images[left].style.zIndex = 1;
+
+  images[center].style.transform = 'translateX(-50%) rotateY(0deg) scale(1.2)';
+  images[center].style.opacity = '1';
+  images[center].style.zIndex = 3;
+
+  images[right].style.transform = 'translateX(calc(-50% + 300px)) rotateY(-30deg) scale(0.9)';
+  images[right].style.opacity = '1';
+  images[right].style.zIndex = 1;
+}
+
+// 초기 상태 적용
+updatePositions();
+
+// 호버 시 해당 이미지가 가운데로 오게
+images.forEach((img, i) => {
+  img.addEventListener('mouseenter', () => {
+    current = i;
+    updatePositions();
+  });
+});
