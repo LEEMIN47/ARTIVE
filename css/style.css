@@ -266,6 +266,31 @@ span {
     background-color: #22F9FD;
 }
 
+.button-trail {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #e63946; /* 네온 블루 */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 4px #e63946;
+  animation: fadeTrail 0.5s forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeTrail {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+
 .button.active {
     background-color: #22F9FD;
     color: rgb(0, 0, 0);
@@ -357,58 +382,64 @@ span {
 }
 
 
-#gallery_wrap{
-  margin-top: 4200px;  
+#gallery_wrap {
+    margin-top: 4200px;
 }
-.poster_t{
-margin-bottom: 150px;
-font-size: 20px;
-font-weight: 700;
-text-align: center;
-text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 3px;
+
+.poster_t {
+    margin-bottom: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
 }
 
 .carousel {
-  position: relative;
-  width: 900px;
-  height: 500px;
-  perspective: 2000px;
+    position: relative;
+    width: 900px;
+    height: 500px;
+    perspective: 2000px;
 
-  left: 74%;
-  transform: translateX(-50%);
- 
+    left: 74%;
+    transform: translateX(-50%);
+
 
 }
 
 .carousel img {
 
-  position: absolute;
-  width: 300px;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-  cursor: pointer;
-  transition: transform 2s ease, opacity 1.5s ease;
-  transform-origin: center center;
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 2s ease, opacity 1.5s ease;
+    transform-origin: center center;
 }
 
 /* 기본 3장 위치 (가운데 / 왼쪽 / 오른쪽) */
 .carousel img:nth-child(1) {
-  transform: translateX(calc(-50% - 300px)) rotateY(30deg) scale(0.9);
-  opacity: 1;
-  z-index: 1;
-  border: 1px solid white;
+    transform: translateX(calc(-50% - 300px)) rotateY(30deg) scale(0.9);
+    opacity: 1;
+    z-index: 1;
+    border: 1px solid white;
 }
+
 .carousel img:nth-child(2) {
-  transform: translateX(-50%) rotateY(0deg) scale(1.2);
-  opacity: 1;
-  z-index: 1;
+    transform: translateX(-50%) rotateY(0deg) scale(1.2);
+    opacity: 1;
+    z-index: 1;
 }
+
 .carousel img:nth-child(3) {
- transform: translateX(calc(-50% + 300px)) rotateY(-30deg) scale(0.9);
-  opacity: 1;
-  z-index: 1;
+    transform: translateX(calc(-50% + 300px)) rotateY(-30deg) scale(0.9);
+    opacity: 1;
+    z-index: 1;
 }
+
+
+
