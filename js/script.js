@@ -127,7 +127,7 @@ function closeArchive() {
   document.querySelectorAll('.button').forEach(btn => btn.classList.remove('active'));
 
   // .artists 섹션으로 스크롤 이동
-  const artistsSection = document.querySelector('.artists');
+  const artistsSection = document.querySelector('#artists');
   if (artistsSection) {
     artistsSection.scrollIntoView({ behavior: 'smooth' });
   }

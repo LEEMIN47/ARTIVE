@@ -383,7 +383,7 @@ span {
 
 
 #gallery_wrap {
-    margin-top: 4200px;
+    margin-top: 4300px;
 }
 
 .poster_t {
@@ -397,20 +397,19 @@ span {
 }
 
 .carousel {
-    position: relative;
+
     width: 900px;
     height: 500px;
     perspective: 2000px;
-
-    left: 74%;
-    transform: translateX(-50%);
-
+position: relative;
+margin: 0 auto;
 
 }
 
 .carousel img {
 
     position: absolute;
+    left: 50%;
     width: 300px;
     height: 420px;
     object-fit: cover;
@@ -441,5 +440,27 @@ span {
     z-index: 1;
 }
 
+
+
+.back-archive-btn {
+
+        display: block;
+    margin: 3200px auto;
+    padding: 12px 24px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+    border-radius: 20px;
+      white-space: nowrap;
+
+
+}
+
+.back-archive-btn:hover {
+    background: #000;
+    color: #fff;
+}
 
 
